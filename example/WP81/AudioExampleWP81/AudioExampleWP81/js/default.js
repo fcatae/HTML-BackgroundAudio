@@ -16,6 +16,13 @@
                 // Restore application state here.
             }
             args.setPromise(WinJS.UI.processAll());
+
+            BgAudio.play("sounds/intro.mp3", 42000);
+
+            btnMusic.onclick = function () {
+                BgAudio.play("sounds/intro.mp3", 42000);
+            };
+
         }
     };
 
